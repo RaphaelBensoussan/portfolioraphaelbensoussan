@@ -357,7 +357,7 @@
               </a>
           
               <!-- Bouton pour voir le tableau de compétence -->
-              <a href="/downloads/CV.pdf" download="CV.pdf" class="flex items-center">
+              <a href="/downloads/tableau_synthèse.pdf" target="_blank" class="flex items-center">
                   <button class="bg-gray-300 hover:bg-gray-400 active:bg-gray-500 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center transform transition-transform duration-200 hover:scale-105 active:bg-gray-500">
                       <!-- Nouvelle icône pour le tableau (grille) -->
                       <svg class="fill-current w-4 h-4 mr-2 transition-colors duration-200 text-gray-800 active:text-white active:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -368,8 +368,7 @@
               </a>
           </div>
           
-            
-            
+  
           </div>
         </div>
       </div>
@@ -566,6 +565,25 @@
                 </div>
               </div>
 
+              <!-- Compétence Excel -->
+<div class="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col">
+  <div class="pattern-dots-md gray-light">
+    <div class="rounded bg-gray-800 p-4 transform translate-x-6 -translate-y-6">
+      <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-5 flex-shrink-0 p-2">
+        <!-- Émoticône Excel (tableau ou graphique) -->
+        <span class="text-3xl">📊</span>
+      </div>
+      <div class="flex-grow">
+        <h2 class="text-xl title-font font-medium mb-3">Excel</h2>
+        <p class="leading-relaxed text-sm text-justify">Excel est un tableur largement utilisé pour la gestion de données, l'analyse, les calculs et la création de graphiques. Il est un outil incontournable dans les environnements professionnels et éducatifs.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
             </div>  
             
             <div class="text-center mb-20">
@@ -594,7 +612,7 @@
                       alt="Certification Google Analytics" 
                       class="mr-4 cursor-pointer image-list" 
                       onclick="agrandirImage('/img/mastorisation.png')">
-                      <p>Certification Google Analytics</p>
+                      <p>En cours ...</p>
                     </li>
                     
                     <!-- Conteneur pour l'image agrandie -->
@@ -608,7 +626,7 @@
                       alt="Certification Google Analytics" 
                       class="mr-4 cursor-pointer image-list" 
                       onclick="agrandirImage('/img/mastorisation.png')">
-                      <p>Certification Google Analytics</p>
+                      <p>En cours ...</p>
                     </li>
                     
                     <!-- Conteneur pour l'image agrandie -->
@@ -622,7 +640,7 @@
                       alt="Certification Google Analytics" 
                       class="mr-4 cursor-pointer image-list" 
                       onclick="agrandirImage('/img/mastorisation.png')">
-                      <p>Certification Google Analytics</p>
+                      <p>En cours ...</p>
                     </li>
                     
                     <!-- Conteneur pour l'image agrandie -->
@@ -636,7 +654,7 @@
                       alt="Certification Google Analytics" 
                       class="mr-4 cursor-pointer image-list" 
                       onclick="agrandirImage('/img/mastorisation.png')">
-                      <p>Certification Google Analytics</p>
+                      <p>En cours ...</p>
                     </li>
                     
                     <!-- Conteneur pour l'image agrandie -->
@@ -880,7 +898,6 @@
       </div>
     </section>
 
-    <!-- Pas fini  -->
     <section id="projets" class="bg-gray-100 border-b py-40 ">
       <div class="container mx-auto flex flex-wrap pt-4 pb-12">
         <h2 class="w-full my-2 text-5xl font-black leading-tight text-center text-gray-800"> Projets </h2>
@@ -944,47 +961,344 @@
     </div>
   </div>
   
-        <!-- Exemple de projet École -->
-        <article class="project-card ecole relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto transition transform">
-          <img src="https://images.unsplash.com/photo-1506784365847-bbad939e9335" alt="Projet École 1" class="absolute inset-0 h-full w-full object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-        
-          <!-- Bouton + rond et plus discret -->
-          <button onclick="showOverlay()" class="absolute top-4 right-4 z-20 bg-white text-gray-800 rounded-full p-2 opacity-40 hover:opacity-80 active:opacity-100 transition-all duration-200 transform hover:scale-110">
-            +
-          </button>
-        
-          <h3 class="z-10 text-3xl font-bold text-white">Projet École 1</h3>
-        </article>
 
-        <div id="overlay" class="overlay hidden fixed inset-0 bg-white bg-opacity-90 flex justify-center items-center z-50">
-          <div class="overlay-content bg-gray-200 p-8 rounded-xl w-2/3 max-w-4xl relative">
-            <!-- Bouton de fermeture avec fond qui change au survol -->
-            <button onclick="closeOverlay()" class="close-btn absolute top-4 right-4 text-black font-bold text-3xl transition-all duration-300 transform hover:bg-gray-600 hover:scale-125 rounded-full p-2">
-              ×
-            </button>
+<!-- Projet ecole Memory java -->
+<article class="project-card relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto transition transform" data-category="ecole">
+  <img src="/img/memory_java.png" alt="Projet Perso Memory" class="absolute inset-0 h-full w-full object-cover">
+  <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+  <button data-target="overlay-memory-java" 
+          onclick="showOverlay(this)" 
+          class="absolute top-4 right-4 z-20 bg-white text-gray-800 rounded-full p-2 opacity-40 hover:opacity-80 active:opacity-100 transition-transform duration-200 transform hover:scale-110">
+    +
+  </button>
+  <h3 class="z-10 text-3xl font-bold text-white">Memory en Java</h3>
+</article>
 
-            <h2 class="text-2xl font-bold mb-4 text-black">Explication de la Mastorisation de PC</h2>
+<!-- Overlay pour afficher les détails du jeu Memory -->
+<div id="overlay-memory-java" class="overlay hidden fixed inset-0 bg-white bg-opacity-90 flex justify-center items-center z-50">
+  <div class="overlay-content bg-gray-200 p-8 rounded-xl w-2/3 max-w-4xl relative max-h-screen overflow-y-auto">
+    <!-- Bouton de fermeture -->
+    <button onclick="closeOverlay()" 
+            class="close-btn absolute top-4 right-4 text-black font-bold text-3xl transition-all duration-300 transform hover:bg-gray-600 hover:scale-125 rounded-full p-2">
+      ×
+    </button>
 
-            <div class="grid grid-cols-2 gap-8">
-              <div>
-                <!-- Section Windows -->
-                <h3 class="text-xl font-semibold mb-2 text-black">Windows</h3>
-                <p class="text-black">
-                  La mastorisation sur Windows consiste à créer une image système d'une configuration de PC. J'ai utilisé des outils comme <strong>Clonezilla</strong> pour cloner l'image du disque, soit en utilisant des clés USB, soit en utilisant un câble via un serveur. L'utilisation de la clé USB permettait un clonage automatique sur plusieurs machines, tandis qu'avec le câble, il était nécessaire de procéder manuellement à chaque connexion pour cloner les configurations, ce qui était moins rapide. Cette méthode permet de déployer rapidement cette configuration sans avoir à réinstaller le système et les applications à chaque fois.
-                </p>
-              </div>
+    <!-- Titre -->
+    <h2 class="text-2xl font-bold mb-4 text-black">Jeu du Memory en Java (avec Scene Builder)</h2>
 
-              <!-- Section Ubuntu -->
-              <div>
-                <h3 class="text-xl font-semibold mb-2 text-black">Ubuntu</h3>
-                <p class="text-black">
-                  Sur Ubuntu, la mastorisation fonctionne de manière similaire. J'ai également utilisé <strong>Clonezilla</strong> pour créer des images, avec la possibilité de déployer ces images soit via un câble réseau, soit via un serveur. L'option de démarrage réseau permettait un déploiement automatique, contrairement à l'utilisation du câble qui nécessitait une intervention manuelle pour chaque machine.
-                </p>
-              </div>
-            </div>
-          </div>
+  <!-- Description -->
+<h3 class="text-xl font-semibold text-black mt-6">Description :</h3>
+<p class="text-lg text-gray-700 mb-4">
+    Le projet est un jeu du Memory où l'objectif est de retrouver les paires de cartes identiques. 
+    Chaque carte a une image cachée, et les cartes sont mélangées à chaque début de partie. 
+    Lorsque l'utilisateur clique sur une carte, elle se retourne. 
+    Si deux cartes retournées sont identiques, elles restent visibles. 
+    Le jeu se termine lorsque toutes les paires sont trouvées.
+</p>
+
+    <!-- Fonctionnement -->
+<h3 class="text-xl font-semibold text-black mt-6">Fonctionnement :</h3>
+<ul class="list-disc pl-6 text-lg text-gray-700 mb-4">
+    <li><strong>Début du jeu :</strong> Une grille de cartes est affichée, toutes retournées (cachées), créée avec <strong>Scene Builder</strong>.</li>
+    <li><strong>Interaction :</strong> L'utilisateur clique sur une carte pour la retourner et voir son image.</li>
+    <li><strong>Comparer les cartes :</strong> Lorsqu'une deuxième carte est retournée, les deux cartes sont comparées. Si elles sont identiques, elles restent visibles, sinon elles se retournent après un court délai.</li>
+    <li><strong>Victoire :</strong> Le jeu est gagné lorsque toutes les paires sont trouvées. Un message de victoire est affiché.</li>
+    <li><strong>Réinitialisation :</strong> L'utilisateur peut recommencer le jeu en cliquant sur un bouton de réinitialisation.</li>
+</ul>
+<div class="flex flex-wrap gap-4 justify-center mt-4">
+  <img src="/img/memory_java.png" alt="Capture 1" class="w-48 h-auto rounded-lg shadow-lg">
+  <img src="/img/memory_java_exemple.png" alt="Capture 2" class="w-48 h-auto rounded-lg shadow-lg">
+</div>
+
+  </div>
+</div>
+
+<!-- Projet ecole veliko -->
+<article class="project-card relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto transition transform" data-category="ecole">
+  <img src="/img/veliko.png" alt="Projet Ecole veliko" class="absolute inset-0 h-full w-full object-cover">
+  <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+  <button data-target="overlay-veliko" 
+          onclick="showOverlay(this)" 
+          class="absolute top-4 right-4 z-20 bg-white text-gray-800 rounded-full p-2 opacity-40 hover:opacity-80 active:opacity-100 transition-transform duration-200 transform hover:scale-110">
+    +
+  </button>
+  <h3 class="z-10 text-3xl font-bold text-white">Veliko</h3>
+</article>
+
+<!-- Overlay pour afficher les détails veliko -->
+<div id="overlay-veliko" class="overlay hidden fixed inset-0 bg-white bg-opacity-90 flex justify-center items-center z-50">
+  <div class="overlay-content bg-gray-200 p-8 rounded-xl w-2/3 max-w-4xl relative max-h-screen overflow-y-auto">
+    <!-- Bouton de fermeture -->
+    <button onclick="closeOverlay()" 
+            class="close-btn absolute top-4 right-4 text-black font-bold text-3xl transition-all duration-300 transform hover:bg-gray-600 hover:scale-125 rounded-full p-2">
+      ×
+    </button>
+
+    <h2 class="text-3xl font-bold mb-6 text-black">Projet Veliko</h2>
+
+    <h3 class="text-xl font-semibold text-black mt-6">Objectif</h3>
+    <p class="text-lg text-gray-700 mb-4">
+        Le projet permet d'interagir avec l'API Vélib' pour récupérer des informations sur les stations de vélos en libre-service, puis de stocker ces données dans une base de données MySQL pour les réutiliser et les afficher.
+    </p>
+    
+    <h3 class="text-xl font-semibold text-black mt-6">Fonctionnement</h3>
+    <ul class="list-disc pl-6 text-lg text-gray-700 mb-4">
+        <li><strong>Récupération des données :</strong> L'API Vélib' fournit des informations en temps réel sur les stations de vélos : nombre de vélos disponibles, état des bornes, etc.</li>
+        <li><strong>Stockage dans MySQL :</strong> Les données récupérées sont stockées dans une base de données MySQL via Symfony et Doctrine, incluant des informations sur l'emplacement des stations et leur statut.</li>
+        <li><strong>Réutilisation des données :</strong> Les données stockées peuvent être consultées pour générer des rapports ou être affichées en temps réel sur un site ou une application.</li>
+    </ul>
+    
+    <h3 class="text-xl font-semibold text-black mt-6">Technologies utilisées</h3>
+    <ul class="list-disc pl-6 text-lg text-gray-700 mb-4">
+        <li><strong>PHP & Symfony :</strong> Pour la gestion de la logique, l'interaction avec l'API, et le stockage des données.</li>
+        <li><strong>MySQL :</strong> Pour stocker et organiser les informations relatives aux stations Vélib'.</li>
+    </ul>
+    
+    <h3 class="text-xl font-semibold text-black mt-6">Source de l'API</h3>
+    <p class="text-lg text-gray-700 mb-4">
+        Les données proviennent de l'API officielle Vélib', accessible ici : 
+        <a href="https://www.velib-metropole.fr/donnees-open-data-gbfs-du-service-velib-metropole" target="_blank" class="text-blue-500 underline">https://www.velib-metropole.fr/donnees-open-data-gbfs-du-service-velib-metropole</a>
+    </p>
+    
+<div class="flex flex-col items-center gap-6 justify-center mt-8">
+  <img src="/img/veliko.png" alt="Capture 1" class="w-96 h-auto rounded-lg shadow-lg">
+  <img src="/img/veliko_a_propos.png" alt="Capture 2" class="w-96 h-auto rounded-lg shadow-lg">
+  <img src="/img/veliko_inscription.png" alt="Capture 3" class="w-96 h-auto rounded-lg shadow-lg">
+  <img src="/img/veliko_map.png" alt="Capture 4" class="w-96 h-auto rounded-lg shadow-lg">
+</div>
+
+<h3 class="text-xl font-semibold text-black mt-6">Une partie Admin codé en java est en cours ...</h3>
+
+  </div>
+</div>
+
+<!-- Projet ecole pokedex -->
+<article class="project-card relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto transition transform" data-category="ecole">
+  <img src="/img/pokedex.png" alt="Projet Ecole pokedex" class="absolute inset-0 h-full w-full object-cover">
+  <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+  <button data-target="overlay-pokedex" 
+          onclick="showOverlay(this)" 
+          class="absolute top-4 right-4 z-20 bg-white text-gray-800 rounded-full p-2 opacity-40 hover:opacity-80 active:opacity-100 transition-transform duration-200 transform hover:scale-110">
+    +
+  </button>
+  <h3 class="z-10 text-3xl font-bold text-white">Pokedex</h3>
+</article>
+
+<!-- Overlay pour afficher les détails pokedex-->
+<div id="overlay-pokedex" class="overlay hidden fixed inset-0 bg-white bg-opacity-90 flex justify-center items-center z-50">
+  <div class="overlay-content bg-gray-200 p-8 rounded-xl w-2/3 max-w-4xl relative max-h-screen overflow-y-auto">
+    <!-- Bouton de fermeture -->
+    <button onclick="closeOverlay()" 
+            class="close-btn absolute top-4 right-4 text-black font-bold text-3xl transition-all duration-300 transform hover:bg-gray-600 hover:scale-125 rounded-full p-2">
+      ×
+    </button>
+
+    <div class="max-w-4xl mx-auto p-6">
+      <h2 class="text-3xl font-bold text-center text-black mb-6">Fonctionnement du Site avec l'API Pokédex</h2>
+    
+      <p class="text-lg text-gray-700 mb-4">
+        J'utilise l'<strong class="text-blue-500">API Pokédex</strong> pour récupérer et afficher des informations sur les Pokémon.
+      </p>
+    
+      <h3 class="text-xl font-semibold text-black mt-6 mb-4">1. Récupération des données</h3>
+      <p class="text-lg text-gray-700 mb-4">
+        Je fais des requêtes à l'API pour obtenir des informations sur les Pokémon comme leur nom, type, statistiques, et évolutions.
+      </p>
+    
+      <h3 class="text-xl font-semibold text-black mt-6 mb-4">2. Affichage interactif</h3>
+      <p class="text-lg text-gray-700 mb-4">
+        L'utilisateur peut rechercher un Pokémon par son nom ou numéro, et les informations correspondantes s'affichent instantanément.
+      </p>
+    
+      <h3 class="text-xl font-semibold text-black mt-6 mb-4">3. Technologies utilisées</h3>
+      <ul class="list-disc pl-6 text-lg text-gray-700 mb-4">
+        <li><strong>HTML/CSS</strong> pour la structure et le design.</li>
+        <li><strong>JavaScript</strong> pour gérer les requêtes API et afficher dynamiquement les données.</li>
+        <li><strong>API Pokédex</strong> pour les données Pokémon.</li>
+      </ul>
+      <h3 class="text-xl font-semibold text-black mt-6 mb-4">Site officiel de l'API Pokédex</h3>
+  <p class="text-lg text-gray-700 mb-4">
+    Pour plus d'informations sur l'API, vous pouvez consulter le site officiel de l'API Pokédex : 
+    <a href="https://pokeapi.co/" target="_blank" class="text-blue-500 underline">https://pokeapi.co/</a>
+  </p>
+
+  <div class="flex flex-col items-center gap-6 justify-center mt-8">
+  <img src="/img/pokedex.png" alt="Capture 1" class="w-96 h-auto rounded-lg shadow-lg">
+  <img src="/img/pokedex_carte.png" alt="Capture 2" class="w-96 h-auto rounded-lg shadow-lg">
+</div>
+    </div>
+
+    
+    
+
+  </div>
+</div>
+
+<!-- Projet ecole recette de cuisine -->
+<article class="project-card relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto transition transform" data-category="ecole">
+  <img src="/img/recette_de_cuisine.png" alt="Projet Ecole recette de cuisine" class="absolute inset-0 h-full w-full object-cover">
+  <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+  <button data-target="overlay-recette" 
+          onclick="showOverlay(this)" 
+          class="absolute top-4 right-4 z-20 bg-white text-gray-800 rounded-full p-2 opacity-40 hover:opacity-80 active:opacity-100 transition-transform duration-200 transform hover:scale-110">
+    +
+  </button>
+  <h3 class="z-10 text-3xl font-bold text-white">Recette de cuisine</h3>
+</article>
+
+<!-- Overlay pour afficher les détails recette de cuisine -->
+<div id="overlay-recette" class="overlay hidden fixed inset-0 bg-white bg-opacity-90 flex justify-center items-center z-50">
+  <div class="overlay-content bg-gray-200 p-8 rounded-xl w-2/3 max-w-4xl relative max-h-screen overflow-y-auto">
+    <!-- Bouton de fermeture -->
+    <button onclick="closeOverlay()" 
+            class="close-btn absolute top-4 right-4 text-black font-bold text-3xl transition-all duration-300 transform hover:bg-gray-600 hover:scale-125 rounded-full p-2">
+      ×
+    </button>
+
+    <div class="max-w-4xl mx-auto p-6">
+        <h2 class="text-3xl font-bold text-center text-black mb-6">Présentation du Code - Recettes Cuisine</h2>
+      
+        <p class="text-lg text-gray-700 mb-4">
+          J'utilise l'<strong class="text-blue-500">API DummyJSON</strong> pour afficher une liste de recettes de cuisine. Le processus est le suivant :
+        </p>
+      
+        <h3 class="text-xl font-semibold text-black mt-6 mb-4">1. Liste des Recettes</h3>
+        <p class="text-lg text-gray-700 mb-4">
+          Une requête est envoyée pour récupérer les recettes, puis elles sont affichées sous forme de cartes interactives.
+        </p>
+      
+        <h3 class="text-xl font-semibold text-black mt-6 mb-4">2. Détails de la Recette</h3>
+        <p class="text-lg text-gray-700 mb-4">
+          Lorsqu'une recette est sélectionnée, une nouvelle requête permet d'afficher ses détails (ingrédients, instructions, etc.).
+        </p>
+      
+        <h3 class="text-xl font-semibold text-black mt-6 mb-4">3. Technologies</h3>
+        <p class="text-lg text-gray-700 mb-4">
+          Le site utilise <strong class="text-blue-500">HTML</strong>, <strong class="text-blue-500">CSS</strong>, <strong class="text-blue-500">JavaScript (Fetch API)</strong> et <strong class="text-blue-500">Bootstrap</strong> pour le design et les fonctionnalités.
+        </p>
+      
+        <h3 class="text-xl font-semibold text-black mt-6 mb-4">Site officiel de l'API</h3>
+        <p class="text-lg text-gray-700 mb-4">
+          Pour plus d'informations sur l'API DummyJSON, vous pouvez consulter le site officiel : 
+          <a href="https://dummyjson.com/" target="_blank" class="text-blue-500 underline">https://dummyjson.com/</a>
+        </p>
+
+        <div class="flex flex-col items-center gap-6 justify-center mt-8">
+          <img src="/img/recette_de_cuisine.png" alt="Capture 1" class="w-96 h-auto rounded-lg shadow-lg">
+          <img src="/img/recette_de_cuisine_carte.png" alt="Capture 2" class="w-96 h-auto rounded-lg shadow-lg">
         </div>
+
+      </div>
+      
+  </div>
+</div>
+
+<!-- Projet ecole gestion fleurs-->
+<article class="project-card relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto transition transform" data-category="ecole">
+  <img src="/img/gestion_fleurs.png" alt="Projet Ecole gestion fleurs" class="absolute inset-0 h-full w-full object-cover">
+  <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+  <button data-target="overlay-fleurs" 
+          onclick="showOverlay(this)" 
+          class="absolute top-4 right-4 z-20 bg-white text-gray-800 rounded-full p-2 opacity-40 hover:opacity-80 active:opacity-100 transition-transform duration-200 transform hover:scale-110">
+    +
+  </button>
+  <h3 class="z-10 text-3xl font-bold text-white">Gestion fleurs</h3>
+</article>
+
+<!-- Overlay pour afficher les détails recette de cuisine -->
+<div id="overlay-fleurs" class="overlay hidden fixed inset-0 bg-white bg-opacity-90 flex justify-center items-center z-50">
+  <div class="overlay-content bg-gray-200 p-8 rounded-xl w-2/3 max-w-4xl relative max-h-screen overflow-y-auto">
+    <!-- Bouton de fermeture -->
+    <button onclick="closeOverlay()" 
+            class="close-btn absolute top-4 right-4 text-black font-bold text-3xl transition-all duration-300 transform hover:bg-gray-600 hover:scale-125 rounded-full p-2">
+      ×
+    </button>
+
+    <div class="max-w-4xl mx-auto p-6">
+      <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Gestion Fleurs</h1>
+
+      <p class="text-lg text-gray-700 mb-4">
+          Ce projet permet de passer des commandes de fleurs. L'utilisateur peut choisir des fleurs, indiquer les quantités, puis valider et enregistrer la commande. Chaque commande est ajoutée à l'historique et un numéro de commande est généré automatiquement.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-gray-800 mt-6 mb-4">Fonctionnalités :</h2>
+      <ul class="list-disc pl-6 text-gray-700">
+          <li>Affichage des fleurs et des clients.</li>
+          <li>Sélection des fleurs et des quantités.</li>
+          <li>Calcul du montant de la commande.</li>
+          <li>Enregistrement des commandes et mise à jour des informations.</li>
+          <li>Affichage des commandes passées.</li>
+      </ul>
+
+      <h2 class="text-2xl font-semibold text-gray-800 mt-6 mb-4">Outils utilisés :</h2>
+      <p class="text-gray-700">
+          Création de l'interface avec <strong>Scene Builder</strong>.
+      </p>
+
+        <div class="flex flex-col items-center gap-6 justify-center mt-8">
+          <img src="/img/gestion_fleurs.png" alt="Capture 1" class="w-96 h-auto rounded-lg shadow-lg">
+          <img src="/img/gestion_fleurs_historique.png" alt="Capture 2" class="w-96 h-auto rounded-lg shadow-lg">
+          <img src="/img/gestion_fleurs_modifier.png" alt="Capture 3" class="w-96 h-auto rounded-lg shadow-lg">
+          <img src="/img/gestion_fleurs_montant.png" alt="Capture 4" class="w-96 h-auto rounded-lg shadow-lg">
+          <img src="/img/gestion_fleurs_reset.png" alt="Capture 5" class="w-96 h-auto rounded-lg shadow-lg">
+        </div>
+
+      </div>
+      
+  </div>
+</div>
+
+<!-- Projet ecole sncf-->
+<article class="project-card relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto transition transform" data-category="ecole">
+  <img src="/img/sncf.png" alt="Projet Ecole sncf" class="absolute inset-0 h-full w-full object-cover">
+  <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+  <button data-target="overlay-sncf" 
+          onclick="showOverlay(this)" 
+          class="absolute top-4 right-4 z-20 bg-white text-gray-800 rounded-full p-2 opacity-40 hover:opacity-80 active:opacity-100 transition-transform duration-200 transform hover:scale-110">
+    +
+  </button>
+  <h3 class="z-10 text-3xl font-bold text-white">Sncf en java </h3>
+</article>
+
+<!-- Overlay pour afficher les détails sncf -->
+<div id="overlay-sncf" class="overlay hidden fixed inset-0 bg-white bg-opacity-90 flex justify-center items-center z-50">
+  <div class="overlay-content bg-gray-200 p-8 rounded-xl w-2/3 max-w-4xl relative max-h-screen overflow-y-auto">
+    <!-- Bouton de fermeture -->
+    <button onclick="closeOverlay()" 
+            class="close-btn absolute top-4 right-4 text-black font-bold text-3xl transition-all duration-300 transform hover:bg-gray-600 hover:scale-125 rounded-full p-2">
+      ×
+    </button>
+
+    <div class="max-w-4xl mx-auto p-6">
+      <div class="text-center mb-8">
+        <h1 class="text-3xl font-semibold text-blue-600">Gestion des Inscriptions et Présence des Agents</h1>
+    </div>
+
+    <p class="text-lg mb-4">
+        Ce projet simule la gestion des inscriptions des agents à des formations et leur présence, réalisé avec <strong>Scene Builder</strong> et une <strong>base de données</strong>.
+    </p>
+
+    <ul class="list-disc list-inside mb-6 text-lg">
+        <li><strong>Inscriptions :</strong> Je sélectionne les agents non inscrits et les inscris à des formations.</li>
+        <li><strong>Présence :</strong> Je coche la présence des agents à chaque formation et mets à jour la base de données.</li>
+        <li><strong>Mise à jour :</strong> L'interface se met à jour automatiquement après chaque action.</li>
+    </ul>
+
+    <p class="text-lg">
+        Ce projet montre l'intégration de l'interface graphique et de la gestion des données avec une base SQL.
+    </p>
+
+        <div class="flex flex-col items-center gap-6 justify-center mt-8">
+          <img src="/img/sncf_schema_bdd.png" alt="Capture 1" class="w-96 h-auto rounded-lg shadow-lg">
+          <img src="/img/sncf.png" alt="Capture 2" class="w-96 h-auto rounded-lg shadow-lg">
+          <img src="/img/sncf_inscription.png" alt="Capture 3" class="w-96 h-auto rounded-lg shadow-lg">
+          <img src="/img/sncf_presence.png" alt="Capture 4" class="w-96 h-auto rounded-lg shadow-lg">
+        </div>
+
+      </div>
+      
+  </div>
+</div>
       
 <!-- Projet Perso Memory -->
 <article class="project-card relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto transition transform" data-category="perso">
